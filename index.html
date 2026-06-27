@@ -112,6 +112,18 @@ section{padding:7rem 0}
 .about-media .badge .l{font-size:.62rem;letter-spacing:.26em;text-transform:uppercase;margin-top:.5rem;opacity:.85}
 .about-media .frame{position:absolute;inset:18px -18px -18px 18px;border:1px solid var(--gold);border-radius:4px;z-index:-1}
 
+.why{background:var(--ink);color:var(--cream)}
+.why .section-head h2,.why .section-head{color:#fff}
+.why .eyebrow{color:var(--gold-light)}
+.why .note{color:rgba(255,255,255,.6)!important}
+.why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.6rem}
+.why-card{border:1px solid rgba(197,165,114,.25);border-radius:4px;padding:2.4rem 1.8rem;text-align:center;transition:.45s cubic-bezier(.4,0,.2,1);background:rgba(255,255,255,.015)}
+.why-card:hover{border-color:var(--gold);transform:translateY(-6px);background:rgba(197,165,114,.06)}
+.why-card .ic{font-size:1.9rem;color:var(--gold-light);line-height:1;margin-bottom:1.1rem}
+.why-card h3{font-size:1.4rem;margin-bottom:.7rem}
+.why-card p{font-size:.92rem;font-weight:300;color:rgba(255,255,255,.72);line-height:1.6}
+@media(max-width:860px){.why-grid{grid-template-columns:1fr 1fr;gap:1.1rem}}
+@media(max-width:520px){.why-grid{grid-template-columns:1fr}}
 .services{background:linear-gradient(180deg,var(--cream) 0%,var(--cream-2) 100%)}
 .menu-grid{display:grid;grid-template-columns:1fr 1fr;gap:3rem 4rem}
 .menu-block{break-inside:avoid}
@@ -329,6 +341,39 @@ footer{background:var(--ink);color:var(--cream);padding:4.5rem 0 2rem}
       <div class="frame"></div>
       <img src="img/IMG_9285.JPG" alt="Polished nail finish at Cartier Nails & Spa">
       <div class="badge"><div class="n">★★★★★</div><div class="l">Expert Technique</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="why" id="why">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">The Cartier Difference</p>
+      <h2>Why Cartier</h2>
+      <div class="rule"></div>
+      <p class="note">A refined nail experience built on craft, care &amp; cleanliness.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-card reveal">
+        <div class="ic">✦</div>
+        <h3>Expert Technique</h3>
+        <p>Skilled technicians who treat every set as detailed work — precise, lasting, and finished with care.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="ic">✺</div>
+        <h3>Clean &amp; Sanitary</h3>
+        <p>Sterilized tools and fresh, single-use supplies for every guest — your safety and comfort come first.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="ic">❖</div>
+        <h3>Top-Line Products</h3>
+        <p>Premium, quality products on every service — for color that lasts and nails that stay healthy.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="ic">♥</div>
+        <h3>Honest Pricing</h3>
+        <p>A luxury experience at a fair price, in a warm and unhurried Old Town Scottsdale setting.</p>
+      </div>
     </div>
   </div>
 </section>
