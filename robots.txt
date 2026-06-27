@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://salonbunny.github.io/cartier_nail_site/sitemap.xml
