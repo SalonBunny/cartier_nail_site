@@ -48,9 +48,9 @@ img{display:block;max-width:100%}
 .btn:hover::after{transform:translateY(0)}
 .btn.solid{background:var(--gold);color:#fff;border-color:var(--gold)}
 .btn.solid::after{background:var(--gold-deep)}
-.btn.light{border-color:rgba(255,255,255,.5);color:#fff}
-.btn.light::after{background:#fff}
-.btn.light:hover{color:var(--ink)}
+.btn.white{background:#fff;color:var(--gold-deep);border-color:#fff;font-weight:600}
+.btn.white::after{background:var(--gold)}
+.btn.white:hover{color:#fff;border-color:var(--gold)}
 
 header{position:fixed;top:0;left:0;right:0;z-index:100;transition:.5s ease}
 nav{display:flex;align-items:center;justify-content:space-between;padding:1.5rem 0;transition:.5s}
@@ -294,9 +294,9 @@ footer{background:var(--ink);color:var(--cream);padding:4.5rem 0 2rem}
         <a href="#services">Services</a>
         <a href="#gallery">Gallery</a>
         <a href="#reviews">Reviews</a>
-        <a href="#book">Book Online</a>
         <a href="#contact">Visit</a>
         <a href="tel:+14804247773" class="btn">Call (480) 424-7773</a>
+        <a href="#book" class="btn white">Book Online</a>
       </div>
       <button class="menu-toggle" id="menuToggle" aria-label="Menu"><span></span><span></span><span></span></button>
     </nav>
@@ -311,8 +311,7 @@ footer{background:var(--ink);color:var(--cream);padding:4.5rem 0 2rem}
       <h1>Professional Nail Care for <em>Ladies &amp; Gentlemen</em></h1>
       <p>Top-line products meet expert technique in the heart of Scottsdale — a refined nail experience at a price that feels just right.</p>
       <div class="hero-cta">
-        <a href="#services" class="btn light">View Services</a>
-        <a href="#contact" class="btn solid">Find Us</a>
+        <a href="#book" class="btn white">Book Online</a>
       </div>
     </div>
   </div>
