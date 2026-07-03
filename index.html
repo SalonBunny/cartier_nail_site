@@ -172,8 +172,11 @@ section{padding:7rem 0}
 .reviews-widget{max-width:1100px;margin-inline:auto}
 .booking{background:linear-gradient(180deg,var(--cream-2) 0%,var(--cream) 100%)}
 .booking-frame{border-radius:4px;overflow:hidden;box-shadow:var(--shadow);border:1px solid var(--line);background:var(--paper)}
-.booking-frame iframe{width:100%;height:820px;border:0;display:block}
-@media(max-width:860px){.booking-frame iframe{height:760px}}
+.booking-maintenance{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:5rem 2rem;gap:1rem}
+.booking-maintenance .bm-title{font-family:var(--serif);font-size:2rem;color:var(--gold-deep);letter-spacing:.04em}
+.booking-maintenance .bm-text{font-size:1rem;color:var(--muted);max-width:44ch;font-weight:300}
+.booking-maintenance .bm-call{display:inline-block;margin-top:.4rem;padding:.9rem 2.2rem;border:1px solid var(--gold);color:var(--gold-deep);font-size:.95rem;letter-spacing:.12em;transition:.4s}
+.booking-maintenance .bm-call:hover{background:var(--gold);color:#fff}
 
 .experience{background:var(--paper);position:relative;overflow:hidden}
 .experience .wrap{display:grid;grid-template-columns:repeat(3,1fr);gap:2.5rem;text-align:center}
@@ -296,7 +299,7 @@ footer{background:var(--ink);color:var(--cream);padding:4.5rem 0 2rem}
         <a href="#reviews">Reviews</a>
         <a href="#contact">Visit</a>
         <a href="tel:+14804247773" class="btn">Call (480) 424-7773</a>
-        <a href="#book" class="btn white">Book Online</a>
+        <a href="#book" class="btn white">Call to book</a>
       </div>
       <button class="menu-toggle" id="menuToggle" aria-label="Menu"><span></span><span></span><span></span></button>
     </nav>
@@ -311,7 +314,7 @@ footer{background:var(--ink);color:var(--cream);padding:4.5rem 0 2rem}
       <h1>Professional Nail Care for <em>Ladies &amp; Gentlemen</em></h1>
       <p>Top-line products meet expert technique in the heart of Scottsdale — a refined nail experience at a price that feels just right.</p>
       <div class="hero-cta">
-        <a href="#book" class="btn white">Book Online</a>
+        <a href="#book" class="btn white">Call to book</a>
       </div>
     </div>
   </div>
@@ -509,10 +512,14 @@ footer{background:var(--ink);color:var(--cream);padding:4.5rem 0 2rem}
       <p class="eyebrow">Reserve Your Spot</p>
       <h2>Book Online</h2>
       <div class="rule"></div>
-      <p class="note">Choose your service and time below. Prefer to talk to us? Call <a href="tel:+14804247773">(480) 424-7773</a>.</p>
+      <p class="note">Prefer to talk to us? Call <a href="tel:+14804247773">(480) 424-7773</a>.</p>
     </div>
     <div class="booking-frame reveal">
-      <iframe src="https://nailsolutionplus.firebaseapp.com/?storeKey=-Mj6ccdGINXkCpJHUJTd_NEW" title="Book an appointment at Cartier Nails & Spa" loading="lazy"></iframe>
+      <div class="booking-maintenance">
+        <p class="bm-title">Under Maintenance</p>
+        <p class="bm-text">Online booking is temporarily unavailable. Please call us to book an appointment.</p>
+        <a class="bm-call" href="tel:+14804247773">(480) 424-7773</a>
+      </div>
     </div>
   </div>
 </section>
