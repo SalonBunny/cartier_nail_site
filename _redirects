@@ -1,0 +1,4 @@
+# Canonical host: send www and the secondary domain to the primary domain
+https://www.cartiernailsscottsdale.com/* https://cartiernailsscottsdale.com/:splat 301
+https://cartiernailsspa.com/* https://cartiernailsscottsdale.com/:splat 301
+https://www.cartiernailsspa.com/* https://cartiernailsscottsdale.com/:splat 301
